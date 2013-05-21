@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bSave"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="19dp"
+            android:layout_weight="0.09"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/bClear"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="19dp"
+            android:layout_weight="0.03"
+            android:text="CLEAR" />
+
+    </LinearLayout>
+
+    <com.anurag.scribble.DrawView
+        android:id="@+id/drawView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </com.anurag.scribble.DrawView>
+
+</LinearLayout>
